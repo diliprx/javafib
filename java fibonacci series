@@ -1,0 +1,29 @@
+// java program
+//Fibonacci series
+import java.util.*;
+
+class Hello{
+    public static void main(String dilip[]){
+        int a=0,b=1,c;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter Number of Fibonacci series: ");
+        int n=sc.nextInt();
+        
+        if(n>=2){
+            System.out.println(a);
+            System.out.println(b);
+          for(int i=3;i<=n;i++){
+              c=a+b;
+              System.out.println(c);
+              a=b;
+              b=c;
+            
+            }
+        }
+        else{
+            System.out.println("Enter valid number");
+        }
+    }
+}
+            
